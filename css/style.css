@@ -1,0 +1,192 @@
+:root {
+    --main-color: #14ee80;
+}
+::selection {
+    background-color: var(--main-color);
+    color:white;
+}
+html {
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Cairo', sans-serif;
+}
+/*start header*/
+header {
+    background-color: var(--main-color);
+}
+/*start navbar*/
+header .navbar {
+    padding: 3px 0px;
+}
+header nav .navbar-toggler:focus {
+    box-shadow: none;
+}
+header nav .offcanvas.offcanvas-end{
+    left: 0;
+    transform: translatex(-100%);
+}
+header nav .navbar-toggler svg {
+    color: #212529;
+    font-size: 24px;
+}
+header nav .nav-link img {
+    width: 25px;
+    height: 25px;
+    border: 2px solid white;
+}
+/*end navbar*/
+/*end header*/
+/*start main*/
+main {
+    position: relative;
+}
+main .box {
+    padding-top: 120px;
+}
+main .shape {
+    background-image: url(../images/hero-bg.svg);
+    background-position: center right;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+main .text {
+    margin-bottom: -140px;
+}
+main .text h1 {
+    font-size: 70px;
+}
+@media (max-width:767px) {
+    main .text h1 {
+        font-size: 40px;
+    }
+}
+main .text p {
+    color: #222F3F;
+}
+main .text a {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 15px 66px;
+    border-radius: 3px;
+    font-size: 20px;
+    border: none;
+}
+main .text a:hover{
+    background-color: #333333;
+    color: #FFFFFF;
+}
+@media (max-width:991px) {
+    main .image {
+        margin-top: 200px;
+    }
+}
+/*end main*/
+/*strat section content*/
+.content {
+    padding-top: 120px;
+}
+.content .box h2 {
+    font-size: 60px;
+}
+.content .box p {
+    color: #666666;
+}
+.content .box a {
+    color: #0C39F8;
+    text-decoration: none;
+}
+/*end section content*/
+/*start section pricing*/
+.Pricing {
+    padding-top: 100px;
+    padding-bottom: 120px;
+}
+.Pricing .text h2 {
+    font-size: 60px;
+}
+.Pricing .text p {
+    color: #666666;
+}
+.Pricing .links {
+    border: 1px solid #e5e5e5;
+    width: fit-content;
+}
+.Pricing .links .nav-tabs {
+    border-bottom: none;
+}
+.Pricing .links button {
+    color: #666;
+    text-transform: uppercase;
+    font-size: 13px;
+    border: none;
+    transition: .4s;
+}
+.Pricing .links .active {
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 6px 26px;
+}
+.Pricing .box.center {
+    position: relative;
+}
+.Pricing .box.center::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: var(--main-color);
+    left: 0;
+    top: -2px;
+}
+.Pricing .box span {
+    color: #666666;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+}
+.Pricing .box span:last-child {
+    font-size: 15px;
+    font-weight: 400;
+}
+.Pricing .box h2 {
+    font-size: 58px;
+}
+.Pricing .box .box-body li {
+    line-height: 50px;
+}
+.Pricing .box .box-btn a {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 12px 64px;
+    border-radius: 3px;
+    font-size: 18px;
+    border:none;
+}
+.Pricing .box.center .box-btn a {
+    background-color: var(--main-color);
+    color: #333333;
+    font-weight: 500;
+    transition: .4s;
+}
+.Pricing .box.center .box-btn a:hover {
+    color: white;
+}
+.Pricing p a{
+    transition: .4s;
+}
+/*end section pricing*/
+/*start footer*/
+footer {
+    background-color: #DDF7EA;
+}
+footer a {
+    transition: .4s;
+    text-decoration: none;
+}
+/*end footer*/
