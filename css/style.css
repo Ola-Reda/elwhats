@@ -42,7 +42,7 @@ main {
     position: relative;
 }
 main .box {
-    padding-top: 120px;
+    padding-top: 110px;
 }
 main .shape {
     background-image: url(../images/hero-bg.svg);
