@@ -14,10 +14,16 @@ body{
 /*start header*/
 header {
     background-color: var(--main-color);
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+}
+header.sticky {
+    background-color: white;
 }
 /*start navbar*/
 header .navbar {
-    padding: 3px 0px;
+    padding: 2px 0px;
 }
 header nav .navbar-toggler:focus {
     box-shadow: none;
@@ -190,3 +196,64 @@ footer a {
     text-decoration: none;
 }
 /*end footer*/
+/**********animation**********/
+.reveal {
+    position: relative;
+    opacity: 0;
+}
+.reveal.appear {
+    opacity: 1;
+}
+.appear.animate-left {
+    animation: fade-left 1s ease-in-out ;
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.appear.animate-right {
+    animation: fade-right 1s ease-in-out ;
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.appear.animate-top {
+    animation: fade-top 1s ease-in-out ;
+}
+@keyframes fade-top {
+    0% {
+        transform: translatey(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+.appear.animate-bottom {
+    animation: fade-bottom 1s ease-in-out ;
+}
+@keyframes fade-bottom {
+    0% {
+        transform: translatey(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+/**********animation**********/
