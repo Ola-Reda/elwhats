@@ -197,6 +197,32 @@ footer a {
 }
 /*end footer*/
 /**********animation**********/
+.animate.animate-left {
+    animation: fade-left 1s ease-in-out ;
+}
+@keyframes fade-left {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animate.animate-right {
+    animation: fade-right 1s ease-in-out ;
+}
+@keyframes fade-right {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
 .reveal {
     position: relative;
     opacity: 0;
