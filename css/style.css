@@ -12,17 +12,9 @@ body{
     font-family: 'Cairo', sans-serif;
 }
 /*start header*/
-header {
-    background-color: var(--main-color);
-    width: 100%;
-    position: fixed;
-    z-index: 1000;
-}
-header.sticky {
-    background-color: white;
-}
 /*start navbar*/
 header .navbar {
+    background-color: var(--main-color);
     padding: 2px 0px;
 }
 header nav .navbar-toggler:focus {
